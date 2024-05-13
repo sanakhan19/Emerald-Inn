@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald Inn</title>
+    <link rel="stylesheet" href="style_chat.css">
+    
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="https://www.youtube.com/watch?v=VikHHWrgb4Y" target="_blank"><img src="logo.jpg" alt="logo" height="60" width="240"></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Book Now</a></li>
+          <li class="dropdown">
+            <a href="#">Rooms & Suites</a>
+            <div class="dropdown-content">
+              <a href="rooms&suites.html">Standard Rooms</a>
+              <a href="rooms&suites.html">Deluxe Rooms</a>
+              <a href="rooms&suites.html">Executive Rooms</a>
+              <a href="rooms&suites.html">Family Suites</a>
+              <a href="rooms&suites.html">Spa Suites</a>
+              <a href="rooms&suites.html">City view Rooms</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Additional Services</a>
+            <div class="dropdown-content">
+              <a href="#">Room Services</a>
+              <a href="#">Amentities</a>
+              <a href="#">Concierge Services</a>
+              <a href="#">Meeting-Events</a>
+              <a href="#">Airport Shuttle</a>
+              <a href="#">Dining</a>
+            </div>
+          </li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav> 
+
+    <!-- Banner section -->
+    <section class="banner">
+      <div class="container">
+        <h1>Welcome to Emerald Inn</h1>
+        <p>Experience luxury and comfort like never before</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <img src="image 4.jpeg" alt="Luxurious rooms">
+          <h2>Luxurious Rooms & Suites</h2>
+          <p>Experience the ultimate in luxury and comfort with our premium rooms and suites</p>
+        </div>
+        <div class="feature">
+          <img src="dinig.jpeg" alt="Exquisite dining">
+          <h2>Exquisite Dining</h2>
+          <p>Indulge in a world of flavors with our exceptional dining options</p>
+        </div>
+        <div class="feature">
+          <img src="spa.jpeg" alt="Spa and wellness">
+          <h2>Spa & Wellness</h2>
+          <p>Relax, rejuvenate and revitalize your senses with our spa and wellness services</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat assistant -->
+    <div class="chat">
+      <div class="chat-icon">
+        <img src="chat_logo-modified.png" alt="Chat Icon">
+      </div>
+      <div class="chat-box">
+        <div class="chat-header">
+          <h3>Chat Box</h3>
+          <span class="close-button">&times;</span>
+        </div>
+        <div class="chat-body">
+          <div class="chat-message">
+            <div class="sender">Assistant</div>
+            <div class="message">Welcome to Emerald Inn! How can I help make your stay more enjoyable?</div>
+          </div>
+          <!-- Additional chat messages can be added here -->
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Type your message...">
+          <button class="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Service booking -->
+    <section class="service-booking">
+      <div class="container">
+        <h2>Book Your Additional Services</h2>
+        <form action="#">
+          <label for="service">Select your service:</label>
+          <select id="service" name="service">
+            <option value="spa">Spa & Wellness</option>
+            <option value="dining">Exquisite Dining</option>
+            <option value="laundry">Laundry Service</option>
+          </select>
+          <label for="date">Select date:</label>
+          <input type="date" id="date" name="date">
+          <label for="time">Select time:</label>
+          <input type="time" id="time" name="time">
+          <input type="submit" value="Book Now" class="btn">
+        </form>
+      </div>
+    </section>
+  </body>
+
+<footer>
+    &copy; 2023 Emerald Inn. All rights reserved.
+</footer>
+</html>

@@ -1,0 +1,360 @@
+/* Global styles */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	padding: 0;
+  }
+  
+  a {
+	color: #333;
+	text-decoration: none;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  /* Navigation bar */
+  nav {
+	background-color: #5c4033;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+  }
+  
+  nav .logo {
+	font-size: 2rem;
+	font-weight: bold;
+	float: left;
+	margin-right: 30px;
+	text-transform: uppercase;
+  }
+  
+  nav .menu {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  nav .menu li {
+	display: inline-block;
+	margin: 0 10px;
+  }
+  
+  nav .menu li a {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	transition: all 0.3s ease;
+  }
+  
+  nav .menu li a:hover {
+	background-color: #f2d2bd;
+	color:#5c4033;
+  }
+  
+  /* Banner section */
+  .banner {
+	background-image: linear-gradient(rgba(22,74,51,1), rgba(92,64,51,1)), url('img/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .banner h1 {
+	font-size: 5rem;
+	font-weight: bold;
+	color: #f2d2bd;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  }
+  
+  .banner p {
+	font-size: 1.5rem;
+	color: #f2d2bd;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  }
+  
+  .banner .btn {
+	background-color: #f2d2bd;
+	color: #5c4033;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+  }
+  
+  .banner .btn:hover {
+	background-color: #5c4033;
+	color: #ffc0cb;
+  }
+  
+  /* Features section */
+  .features {
+	padding: 80px 0;
+	background-color: #F2D2BD;
+  }
+  
+  .features .feature {
+	margin-bottom: 50px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+  }
+  
+  .features .feature:hover {
+	background-color: #F2D2BD;
+	transform: translateY(-10px);
+	box-shadow: 0 5px 10px rgba(0,0,0);
+  }  
+
+  .chat {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+  }
+  
+  .chat a {
+	background-color: #5C4033;
+	color: #F2D2BD;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+  }
+  
+  .chat a:hover {
+	background-color: #F2D2BD;
+	color: #5C4033;
+  }
+
+/* Service booking section */
+.service-booking {
+	background-color: #F2D2BD;
+	padding: 80px 0;
+  }
+  
+  .service-booking h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #333;
+  }
+  
+  .service-booking form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .service-booking label {
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;
+	color: #333;
+	width: 100%;
+	max-width: 400px;
+  }
+  
+  .service-booking select,
+  .service-booking input[type="date"],
+  .service-booking input[type="time"] {
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .service-booking input[type="submit"] {
+	background-color: #5C4033;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	margin-top: 20px;
+	margin-bottom: 0;
+  }
+  
+  .service-booking input[type="submit"]:hover {
+	background-color: #F2D2BD;
+	color: #5C4033;
+	border: 2px solid #d9b5a4;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #5C4033;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+	z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+
+  .dropdown-content a:hover {
+	background-color: #0f0f0f;
+  }
+
+/* Chat assistant */
+.chat {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+  }
+  
+  .chat .chat-icon {
+	width: 60px;
+	height: 60px;
+	background-color: #5C4033;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .chat .chat-icon img {
+	width: 45px;
+	height: 45px;
+  }
+
+
+
+
+
+
+/* Chat styles */
+.chat {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+  }
+  
+  .chat-icon {
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .chat-box {
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	width: 300px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	display: none;
+  }
+  
+  .chat-header {
+	background-color: rgba(22,74,51,1);
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .chat-header h3 {
+	margin: 0;
+  }
+  
+  .close-button {
+	cursor: pointer;
+	font-size: 18px;
+  }
+  
+  .chat-body {
+	padding: 10px;
+	max-height: 300px;
+	overflow-y: auto;
+  }
+  
+  .chat-message {
+	margin-bottom: 10px;
+  }
+  
+  .sender {
+	font-weight: bold;
+  }
+  
+  .chat-footer {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background-color: #5c4033;
+  }
+  
+  .chat-footer input[type="text"] {
+	flex: 1;
+	padding: 5px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 10px;
+  }
+  
+  .chat-footer .send-button {
+	background-color: rgba(22,74,51,1);
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* Show/hide chat box */
+  .chat:hover .chat-box {
+	display: block;
+  }
+  
+  footer {
+	background-image: linear-gradient(to bottom right, rgba(92,64,51,1),rgba(22,74,51,1));;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
